@@ -1,0 +1,18 @@
+public class Exemplo
+{
+  public static void main (String[] args)
+{
+    int idade=Entrada.leiaInt(" digite a idade");
+    if (idade>18)
+    {
+      System.out.println("vc é maior de idade");
+    }else{
+        System.out.println("vc n é maior de idade");
+      }
+    }
+  }
+
+    
+  
+
+  

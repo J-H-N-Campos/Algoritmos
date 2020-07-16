@@ -1,0 +1,40 @@
+  public class Atividade1
+  { 
+    public static void main(String[] args) 
+    { 
+      int [][] matriz = new int[10][20]; 
+      int [] vetor = new int[20]; 
+      int soma=0;
+      int a=0;
+      int b=0;
+        
+        for ( a=0; a<10; a++)
+        {
+   for ( b=0; b<20; b++)
+    {
+      matriz[a][b]=Entrada.leiaInt("digite um numero:");
+    
+    soma=matriz[a][b]*matriz[a][b];
+    vetor[b]=soma;
+    }
+        }
+
+    for ( a=0; a<10; a++ )
+    {
+      for ( b=0; b<20; b++)
+      {
+        matriz[a][b] = matriz[a][b]*soma;
+    }
+      }
+     for ( a=0; a<10; a++ )
+    {
+      for ( b=0; b<20; b++)
+      {
+    
+    
+        System.out.print("Multiplicacao:"+matriz[a][b]);
+        System.out.print("Soma das linha:"+soma);
+      }
+     }
+    }
+  }

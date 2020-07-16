@@ -1,0 +1,48 @@
+/*2) Ler idade e sexo de 15 pessoas e após mostrar:
+a) Número de pessoas do sexo masculino.
+b) Número de pessoas do sexo feminino.
+c) Número de pessoas com idade até 30 anos.
+d) Número de pessoas com idade igual ou superior a 60 anos. */
+public class Atividade2
+{
+  public static void main (String[] args)
+  {
+    int x=0;
+    int x1=0;
+    int x2=0;
+    int x3=0;
+    int x4=0;
+    while (x < 15)
+    {
+      System.out.println("valor de x;"+x);
+      int id=Entrada.leiaInt("digite a idade");
+    String sexo=Entrada.leiaString("digite o sexo");
+    if (sexo=="m")
+    {
+    
+      x1++;
+      
+      if (sexo=="f")
+      
+      x2++;
+    }
+    
+    
+    if (id<=30) {
+      x3++; 
+      
+    }else
+      if (id>=60) {  
+        x4++;
+    }
+    x++;
+    }
+    System.out.println("quantidade de sexo masculino;"+" "+x1);
+    System.out.println("quantidade de sexo feminino;"+" "+x2);
+    System.out.println("quantidade de pessoas com até 30 anos;"+" "+x3);
+    System.out.println("quantidade de pessoas com 60 anos ou mais;"+" "+x4);
+  }
+}
+        
+      
+      

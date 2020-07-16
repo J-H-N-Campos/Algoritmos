@@ -1,0 +1,36 @@
+public class Ex2{
+  public static void main(String args[]){
+    
+
+int cod,qnt, valor,tt,pag,pag3;
+
+
+// Se??o de Comandos 
+
+System.out.println("**************************************************");
+System.out.println("FORMAS DE PAGAMENTO.");
+System.out.println(" 01 - PAGAMENTO À VISTA - 5% DE DESCONTO ");
+System.out.println(" 02 - PAGAMENTO 3 PARCELAS - SEM ALTERAÇÃO ");
+System.out.println(" 04 - PAGAMENTO 5 PARCELAS - ACRÉSCIMO DE 2% ");
+System.out.println(" 05 - PAGAMENTO 10 PARCELAS - ACRÉSCIMO DE 8% ");
+System.out.println("**************************************************");
+//System.out.println(" Digite o codigo para sua forma de pagamento: ");
+
+
+cod = Entrada.leiaInt("Digite as opções: ");
+if (cod=01) {
+   valor = pag*0.05;
+}else{
+  if (cod=02) 
+         valor = pag2/3;
+}{
+    if (cod=04)
+             valor = pag3*0.02;
+}{
+      if(cod=05)
+                  valor = pag*0.08;
+      }
+System.out.println("PAGAMENTO:");
+System.out.println("SUAS COMPRAS: "+valor);
+  }
+}

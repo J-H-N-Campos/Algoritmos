@@ -1,0 +1,149 @@
+import java.util.Scanner;
+public class jogodavelha {
+    static String[][] mesa = new String[3][3];
+    public static boolean jogo(String j , int x, int y){
+       boolean vence = false;
+       if(x==0 && y==0){
+           if((mesa[0][1].equals(j) && mesa[0][2].equals(j)) ||
+              (mesa[1][0].equals(j) && mesa[2][0].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[2][2].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==0 && y==1){
+           if((mesa[0][0].equals(j) && mesa[0][2].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[2][1].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==0 && y==2){
+           if((mesa[0][1].equals(j) && mesa[0][0].equals(j)) ||
+              (mesa[1][2].equals(j) && mesa[2][2].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[2][0].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==1 && y==0){
+           if((mesa[0][0].equals(j) && mesa[2][0].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[1][2].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==1 && y==1){
+           if((mesa[0][1].equals(j) && mesa[2][1].equals(j)) ||
+              (mesa[1][0].equals(j) && mesa[1][2].equals(j)) ||
+              (mesa[0][0].equals(j) && mesa[2][2].equals(j)) ||
+              (mesa[0][2].equals(j) && mesa[2][0].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==1 && y==2){
+           if((mesa[0][2].equals(j) && mesa[2][2].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[1][0].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==2 && y==0){
+           if((mesa[0][0].equals(j) && mesa[1][0].equals(j)) ||
+              (mesa[2][1].equals(j) && mesa[2][2].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[0][2].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==2 && y==1){
+           if((mesa[2][0].equals(j) && mesa[2][2].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[0][1].equals(j))){
+               vence = true;
+           }
+       }
+       if(x==2 && y==2){
+           if((mesa[2][1].equals(j) && mesa[2][0].equals(j)) ||
+              (mesa[1][2].equals(j) && mesa[0][2].equals(j)) ||
+              (mesa[1][1].equals(j) && mesa[0][0].equals(j))){
+               vence = true;
+           }
+       }
+       return vence;
+    }
+    public static void main(String[] args) {
+        int x = 0;
+        int y = 0;
+        int jogador = 1;
+        boolean vence = false;
+        int jogadas = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                mesa[i][j] = "-";
+            }
+        }
+        while (!vence && jogadas < 9) {
+            java.util.Scanner s = new Scanner(System.in);
+            System.out.println("X (Linha): ");
+            x = s.nextInt();
+            while(x<0 || x>2){
+                System.out.println("Índice da linha inválido\nX (Linha): ");
+                s = new Scanner(System.in);
+                x = s.nextInt();
+            }
+            s = new Scanner(System.in);
+            System.out.println("Y (Coluna): ");
+            y = s.nextInt();
+            while(y<0 || y>2){
+                System.out.println("Índice da coluna inválido\nY (Coluna): ");
+                s = new Scanner(System.in);
+                y = s.nextInt();
+            }
+            boolean jogada = false;
+            if (jogador == 1) {
+                try {
+                    if (!mesa[x][y].equals("X") && !mesa[x][y].equals("Y")) {
+                        mesa[x][y] = "X";
+                        jogada = true;
+                        jogadas++;
+                        vence = jogo("X", x, y);
+                    } else {
+                        System.out.println("\n Posição já preenchida. \n");
+                        jogada = false;
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                try {
+                    if (!mesa[x][y].equals("X") && !mesa[x][y].equals("Y")) {
+                        mesa[x][y] = "O";
+                        jogada = true;
+                        jogadas++;
+                        vence = jogo("O", x, y);
+                    } else {
+                        System.out.println("\nPosição já preenchida.");
+                        jogada = false;
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            if (jogada && !vence) {
+                if (jogador == 1) {
+                    jogador = 2;
+                } else {
+                    jogador = 1;
+                }
+            }
+            String matriz = "\n";
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    matriz += mesa[i][j] + " ";
+                }
+                matriz += "\n";
+            }
+            System.out.println(matriz);
+        }
+        if(vence){
+            System.out.println("Jogador "+jogador+" foi o vencedor.");
+        }else{
+          
+            System.out.println("Jogo terminou empatado.");
+        }
+    }
+}

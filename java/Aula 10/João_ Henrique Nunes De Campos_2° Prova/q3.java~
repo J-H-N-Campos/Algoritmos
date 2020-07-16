@@ -1,0 +1,23 @@
+public class q3
+{
+  public static void main (String[] args)
+  {
+    int[] vetor=new int[4];
+    
+    for(int i=0; i=2; i++)
+    {
+      vetor[i]=Entrada.leiaInt("digite dez numeros");
+      System.out.println("Vetor Original"+vetor[i]);
+      
+      if (vetor[i]%4=0)
+      {
+        System.out.println("Vetor nao multiplo de 4"+vetor[i]);
+      }else
+        System.out.println("Vetor nao multiplo de 4"+vetor[i]);
+    }
+  }
+}
+      
+      
+    
+    

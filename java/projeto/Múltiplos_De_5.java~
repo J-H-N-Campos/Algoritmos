@@ -1,0 +1,24 @@
+public class Múltiplos_De_5
+{
+    public static void main(String[] args)
+    {
+        int n;
+        
+        for(int i=1; i<=10; i++)
+        {
+            System.out.println("----------------------------------");
+            
+        n=Entrada.leiaInt("Digite um número:");
+        
+        if (n%5==0)
+        {
+            System.out.println("Número múltiplo de cinco:"+n);
+        } else {
+            System.out.println("Número não múltiplo de cinco:"+n);
+        }
+        System.out.println("Quantidades dos números múltiplos de cinco:"+i);
+        System.out.println("Quantidades dos números não múltiplos de cinco:"+i);
+        }
+        System.exit(0);
+    }
+}

@@ -1,0 +1,15 @@
+public class q2
+{
+  public static void main (String[] args)
+  {
+    int[] vetor=new int[2];
+    
+    for(int i=0; i<2; i++)
+    {
+      vetor[i]=Entrada.leiaInt("digite dez numeros:");
+      if (vetor[i]2!=0)
+      {
+        
+        
+      
+    

@@ -1,0 +1,25 @@
+public class Atividade10
+{
+  public static void main (String[] args)
+  {
+    int[] vetor=new int[];{1,2,3,4,5,6,7,8,9,10};
+    int[] vetora=new int[]{12,13,15,14,18};
+    int x=0;
+    int x1=0;
+    
+    for(int i=0; i<1; i++)
+    {
+      if (vetor[i]%2==0)
+      {
+        x=(vetor[i]+vetor[i]);
+        x1=(x+vetora[i]);
+        System.out.println("soma dos numeros pares:"+x1);
+      }else
+        System.out.println("nao existem numeros divisores par,mas sim por impar:"+x1);
+    }
+  }
+}
+      
+        
+    
+                             

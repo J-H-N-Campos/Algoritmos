@@ -1,0 +1,38 @@
+public class Atividade1
+{
+  public static void main (String[] args) 
+  {
+    double a=0;
+    double b=0;
+    int quantidade=0;
+    int codigo=0;
+
+    quantidade=Entrada.leiaInt("digite a quantidade de livros que deseja comprar");
+    a=(0.25+quantidade+7.50);
+    b=(0.50+quantidade+2.50);
+ 
+    System.out.println("na escolha a voce tem;"+a+codigo+"reais de desconto");
+    System.out.println("na escolha b voce tem;"+b+codigo+"reais de desconto");
+      
+    codigo=Entrada.leiaInt("Digite 1 para opção A ou 2 para opçao B");
+
+  if(codigo==1) 
+    {
+     System.out.println("voce tem R$"+a+" Reais de desconto");
+    }
+  if(codigo==2) 
+  {
+   System.out.println("voce tem R$"+b+" Reais de desconto");
+  }else{
+   System.out.println("Nao existe essa opção");
+  }
+  }
+}
+    
+
+ 
+    
+    
+    
+    
+    

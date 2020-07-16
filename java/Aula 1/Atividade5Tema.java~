@@ -1,0 +1,12 @@
+/*Ler dois valores A e B, efetuar a troca dos valores de forma que a
+variável A passe a possuir o valor da variável B e que a variável B
+passe a possuir o valor de A. Apresentar os valores trocados*/
+public class Atividade5Tema
+{
+  public static void main (String[] args)
+  {
+    int va= Entrada.leiaInt("digite o valor a");
+    int vb= Entrada.leia.int("digite o valor b");
+    (vb=va)
+      int=aux(va=vb)
+  

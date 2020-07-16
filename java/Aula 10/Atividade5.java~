@@ -1,0 +1,14 @@
+public class Atividade5
+{
+  public static void main (String[] args)
+  {
+    int[] vetor=new int[15]{"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"};
+    int[] vetora=new int[10]{"20,21,22,23,24,25,26,27,28,29"};
+    
+
+     System.out.println("Numeros das matriculas dos alunos que cursam logica da programacao:"+vetor[i]);
+     System.out.println("Numeros das matriculas dos alunos que cursam logica em um vetor:"+vetora[i]);
+  }
+}
+      
+      

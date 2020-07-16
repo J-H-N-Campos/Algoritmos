@@ -1,0 +1,26 @@
+/* Escreva um algoritmo que calcula a média das 3 notas de um aluno e mostra na tela a mensagem
+foi reprovado ou foi aprovado (sabendo que a média para aprovação é maior ou igual a 7).
+Exemplo de entrada
+3
+4
+5
+Exemplo de saída
+O aluno foi reprovado com média 4*/
+public class Atividade2
+{
+  public static void main (String[] args)
+  {
+    int n1=Entrada.leiaInt("Digite a nota 1");
+    int n2=Entrada.leiaInt("digite a nota 2");
+    int n3= Entrada.leiaInt("digite a nota 3");
+    int media=(n1+n2+n3)/3;
+    
+     if (media >= 7){
+      System.out.println("aprovado");
+    }else{
+        System.out.println("reprovado");
+    }
+  }
+}
+
+        

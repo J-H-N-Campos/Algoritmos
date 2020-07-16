@@ -1,0 +1,125 @@
+public class Atividade4
+{
+  public static void main(String args[])
+  {
+    int a=0;
+    //variavel a de numeros inteiros
+    int b=0;
+    //variavel b de numeros inteiros
+    int c=0;
+    //variavel c de numeros inteiros
+    int d=0;
+    //variavel d de numeros inteiros
+    int e=0;
+    //variavel e de numeros inteiros
+    int f=0;
+    //variavel f de numeros inteiros
+    int g=0;
+    //variavel g de numeros inteiros
+    int h=0;
+    //variavel h de numeros inteiros
+    int i=0;
+    //variavel i de numeros inteiros
+    int x=0;
+    //variavel x de numeros inteiros
+    int y=0;
+    //variavel y de numeros inteiros
+    double x1=0;
+    //variavel x1 de numeros quebrados
+    double x2=0;
+    //variavel x2 de numeros quebrados
+    double soma=0;
+    //variavel soma de numeros quebrados
+    double soma2=0;
+    //variavel soma2 de numeros quebrados
+    double valor=0;
+    //variavel valor de numeros quebrados
+    double valor2=0;
+    //variavel valor2 de numeros quebrados
+    double subtracao=0;
+    //variavel subtracao de numeros quebrados
+    double subtracao2=0;
+    //variavel subtracao2 de numeros quebrados
+    a=Entrada.leiaInt("numero 1");
+    //variavel a sendo lida
+    b=Entrada.leiaInt("numero 2");
+    //variavel b sendo lida
+    c=Entrada.leiaInt("numero 3");
+    //variavel c sendo lida
+    d=Entrada.leiaInt("numero 4");
+    //variavel d sendo lida
+    e=Entrada.leiaInt("numero 5");
+    //variavel e sendo lida
+    f=Entrada.leiaInt("numero 6");
+    //variavel f sendo lida
+    g=Entrada.leiaInt("numero 7");
+    //variavel g sendo lida
+    h=Entrada.leiaInt("numero 8");
+    //variavel h sendo lida
+    i=Entrada.leiaInt("numero 9");
+    //variavel i sendo lida
+    x=Entrada.leiaInt("numero 10");
+    //variavel x sendo lida
+    y=Entrada.leiaInt("numero 11");
+    //variavel y sendo lida
+    x1=((a*10)+(b*9)+(c*8)+(d*7)+(e*6)+(f*5)+(g*4)+(h*3)+(i*2)+(x*2));
+    //formula para variavel x1
+    soma=x1/11;
+    //formula para variavel soma
+    valor=soma*11;
+    //formula para variavel valor
+    subtracao=x1-valor;
+    //formula para variavel subtracao
+    
+    if((subtracao==1) || (subtracao==0))
+      // se subtracao for igual a 1 e 0 entao
+    {
+      System.out.println("O digito de x e 0");
+      // mostrara que o digitito x e 0
+    }else{
+      //senao
+        System.out.println("O digito vai receber");
+        //mostrara que o digito vai receber
+    }
+    
+    x2=((a*11)+(b*10)+(c*9)+(d*8)+(e*7)+(f*6)+(g*5)+(h*4)+(i*3)+(x*2)+(y*1));
+    //formula da variavel x2
+    soma2=x2/11;
+    //formula para variavel soma2
+    valor2=soma2*11;
+    //formula para variavel valor2
+    subtracao2=x2-valor2;
+    //formula da variavel subtracao2
+    
+    if((subtracao2==1) || (subtracao2==0))
+      //se a variavel subtracao2 for igual a 1 e 0 entao
+    {
+      System.out.println("O digito de Y e 0");
+      //mostrara que o digito x e 0
+    }else{
+      //senao
+        System.out.println("O digito  vai receber");
+        // mostrara que o digito vai receber
+    }
+    
+    System.out.println("resultado do X;"+x1);
+    //aqui mostra o resultado do x
+    System.out.println("resultado do Y;"+x2);
+     //aqui mostra o resultado do y
+    System.out.println("soma;"+soma);
+     //aqui mostra o resultado do soma
+    System.out.println("soma;"+soma2);
+     //aqui mostra o resultado do soma2
+    System.out.println("valor;"+valor);
+     //aqui mostra o resultado do valor
+    System.out.println("valor;"+valor2);
+     //aqui mostra o resultado do valor2
+    System.out.println("sub;"+subtracao);
+     //aqui mostra o resultado do subtracao
+    System.out.println("sub;"+subtracao2);
+     //aqui mostra o resultado do subtracao2
+    }
+}
+           
+      
+    

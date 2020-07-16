@@ -1,0 +1,15 @@
+/*Fazer um programa que leia dois vetores A e B, de dimensão 8, e realize a troca dos elementos
+destes vetores. Ou seja, após a execução do programa o vetor B deverá conter os valores
+fornecidos para o vetor A, e vice-versa. */
+
+Public class Atividade2
+{
+  public static void main (String[]args)
+  {
+    int[] vetor=new int[2];
+    int [] vetor1=new int[2];
+    
+    for(int a=0; a<2; a++;)
+      
+    
+  

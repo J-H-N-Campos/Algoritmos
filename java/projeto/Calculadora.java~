@@ -1,0 +1,59 @@
+public class Calculadora{
+  public static void main(String args[]){
+    int opcao = 5;
+    System.out.println("programa calculadora");
+    System.out.println("   |Projetada por Felipe Fritz Franceschi e João De Campos 2019|");
+    opcao = Entrada.leiaInt("                    Bem - Vindo ao programa \n digite um numero entre [1-4] para entrar no menu");
+    double x1, y2 = 0.0d;
+    double resultado = 0.0d;
+    double somar = 0.0d;
+    double multiplicar = 0.0d;
+    double dividir = 0.0d;
+    double subtrair = 0.0d;
+    int Saida = 0;
+    
+    while (opcao!=5){
+      opcao = Entrada.leiaInt("Informe Uma Opção Para Executar À Calculadora [1-5] \n\n|MENU DA CALCULADORA| \n 1° - Somar \n 2° - Multiplicar \n 3° - Dividir \n 4° - Subtrair \n 5° - Sair Do Programa");  
+      switch(opcao){
+        case 1 :
+        { 
+          x1 = Entrada.leiaDouble("informar o primeiro valor para a adição");
+          y2 = Entrada.leiaDouble("informar o segundo valor para a adição");
+          resultado = somar + (x1 + y2);
+          System.out.println("resultado soma = " +resultado);
+          break;
+        }
+        case 2 :
+        { 
+          x1 = Entrada.leiaDouble("informar o primeiro valor para a multiplicação");
+          y2 = Entrada.leiaDouble("informar o segundo valor para a multiplicação ");
+          resultado = multiplicar + (x1 * y2);
+          System.out.println("resultado multiplicação = " +resultado);
+          break;
+        }
+        case 3 :
+        {  
+          x1 = Entrada.leiaDouble("informar o primeiro valor para a divisão");
+          y2 = Entrada.leiaDouble("informar o segundo valor para a divisão");
+          resultado = dividir + (x1 / y2);
+          System.out.println("resultado divisão = " +resultado);
+          break;
+        }
+        case 4 :
+        {
+          x1 = Entrada.leiaDouble("informar o primeiro valor para a subtração");
+          y2 = Entrada.leiaDouble("informar o segundo valor para a subtração");
+          resultado = subtrair + (x1 - y2);
+          System.out.println("resultado subtração = " +resultado);
+          break;
+        }
+        case 5:
+        {
+          System.out.println(Saida);
+          System.out.println();
+          break;
+        }
+      }
+    }System.out.println("Obrigado por utilizar a Calculadora");
+  }
+}

@@ -1,0 +1,43 @@
+/* Faça um programa que leia 50 elementos inteiros de um vetor e determine quantos elementos
+não repetidos (diferentes) existem neste vetor.*/
+public class Atividade3
+{
+  public static void main(String[]args)
+  {
+    int[] vetor=new int[8];
+    int x=0;
+    int x1=0;
+    int a=0;
+    int b=0;
+
+    while (a>8)
+    {
+        vetor[a]=Entrada.leiaInt("digite um numero");
+    }
+    
+     while (b>8)
+      {  vetor[b]=Entrada.leiaInt("digite outro numero");
+     }
+      
+      
+      if (vetor[a]<vetor[b])
+    {
+      System.out.println(" elementos repetidos:"+vetor[a]+x);
+      a++;
+      }
+   
+      if (vetor[b]>vetor[a])
+    {
+    System.out.println("elementos não repetidos:"+vetor[b]+x1);
+    {
+      b++;
+    }
+      }
+      }
+     }
+ 
+  
+
+      
+      
+        

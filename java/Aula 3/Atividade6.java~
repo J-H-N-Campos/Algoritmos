@@ -1,0 +1,31 @@
+ Ler um número de um a sete, correspondendo ao dia da semana, logo,
+escrever o dia da semana em caracteres
+public class Atividade6
+{
+  public static void main (String[] args)
+  {
+    int num1=0;
+    int num2=0;
+    int num3=0;
+    int num4=0;
+    int num5=0;
+    int num6=0;
+    int num7=0;
+    num1=Entrada.leiaInt("domingo");
+    num2=Entrada.leiaInt("segunda");
+    num3=Entrada.leiaInt("terca");
+    num4=Entrada.leiaInt("quarta");
+    num5=Entrada.leiaInt("quinta");
+    num6=Entrada.leiaInt("sexta");
+    num7=Entrada.leiaInt("sabado");
+      System.out.println("domingo"+num1);
+      System.out.println ("segunda"+num2);
+         System.out.println("terca"+num3);
+         System.out.println("quarta"+num4);
+         System.out.println("quinta"+num5);
+         System.out.println("sexta"+num6);
+         System.out.println("sabado"+num7);
+  }
+ }
+        
+    

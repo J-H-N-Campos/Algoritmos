@@ -1,0 +1,58 @@
+public class Atividade3C
+{
+  public static void main (String[]args)
+  {
+       
+    int[][] idade_freq = new int [10][10];
+    String nome[] = new String [100];
+    
+    int i=0,j=0,soma=0,maior=0,media=0,menor=999999;
+    
+    for (i=0; i <10; i ++) {
+      for (j=0; j <10; j++){                 
+        idade_freq[i][j] = (int)(Math.random()*100);        
+      }
+    }  
+    
+    System.out.println ("MATRIZ ORIGINAL:"); 
+    for (i=0; i<10; i++) {
+      for (j=0; j<10; j++){
+        System.out.print( idade_freq[i][j]+"\t" );
+      }
+      System.out.println();
+    }
+    
+       
+    for (i=0; i<10; i++) {
+      for (j=0; j<10; j++){
+        soma=soma+idade_freq[i][j];
+        media=soma/100;
+      }
+    }
+    
+    for (i=0; i<10; i++) {
+      for (j=0; j<10; j++){
+        if (idade_freq[i][j]>maior){
+          maior=idade_freq[i][j];
+        }
+      }
+    }
+    
+    for (i=0; i<10; i++) {
+      for (j=0; j<10; j++){
+        if (idade_freq[i][j]<menor){
+          menor=idade_freq[i][j];
+        }
+      }
+    }
+    
+    System.out.println ("A média das idades da matriz é:"+media); 
+    System.out.println ("A maior idade da matriz é:"+maior); 
+    System.out.println ("A menor idade da matriz é:"+menor);
+  }
+}
+
+
+
+
+    

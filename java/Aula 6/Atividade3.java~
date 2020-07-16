@@ -1,0 +1,38 @@
+public class Atividade3
+{
+ public static void main (String args[])
+ {
+   
+  double a=0;
+  double b=0;
+  double c=0;
+  double delta=0;
+  double delta1=0;
+
+    a=Entrada.leiaDouble("Digite o valor de a");  
+    b=Entrada.leiaDouble("Digite o valor de b");   
+    c=Entrada.leiaDouble("Digite o valor de c"); 
+    delta=Entrada.leiaDouble("digite o valor do delta");
+    if (delta==0)
+    {
+        delta=(b*b)-(4*a*c);
+    }
+    if (delta<0)
+    {
+       System.out.println("raiz nao existe ");
+    }
+    if (delta==0)
+    {
+      System.out.println("existe uma raiz");
+        delta1=(-b)/(2*a);
+       }
+          if (delta>0)
+          {
+      System.out.println("existem duas raizes");
+        delta1=(-b)/(2*a);
+        delta=(b*b)-(4*a*c);
+        System.out.println("Primeira raiz = " + delta1);
+        System.out.println("Segunda raiz = " + delta);
+       }
+      }
+ }

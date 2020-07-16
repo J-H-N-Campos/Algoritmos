@@ -1,0 +1,16 @@
+public class Atividade1
+{
+  public staticc void main (String[] args);
+  {
+    String x=Entrada.leiaString("digite alguma palavras");
+    int limite=Math.min (n.lengeth(),10);
+    
+    int z=0;
+    while (x<limite)
+    {
+      System.out.println (n.charAT( x ) );
+      x++;
+    }
+    System.out.println();
+  }
+}

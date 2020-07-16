@@ -1,0 +1,20 @@
+/*Escrever um programa que lê 10 nomes, os armazena em um vetor, depois os imprime na ordem inversa de leitura.*/
+
+public class Atvidade5
+{
+  public static void main (String[] args)
+  {
+    String vetor[]=new String[2];
+    
+    for(Int i=0; i=2; i++) 
+    {
+      vetor[i]=Entrada.leiaString("Digite uma palavra");
+      System.out.println("palavras são:"+vetor[i]);
+    }
+    for (int i=2; i=0; i++)
+    {
+      System.out.println("palvras inversas são:"+vetor[i])
+    }
+  }
+}
+    

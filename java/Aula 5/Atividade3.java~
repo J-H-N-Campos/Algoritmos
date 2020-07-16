@@ -1,0 +1,68 @@
+public class Atividade3 
+{
+ 
+    public static void main(String[] args) {
+ 
+        double salario=0;
+        double novoSalario=0;
+        double diferencaSalario=0;
+        int tempo=0;
+        String cargo;
+        salario=Entrada.leiaDouble("digite o salario do funcionario");
+        tempo=Entrada.leiaInt("digite o tempo do funcionario");
+        cargo=Entrada.leiaString("digite o cargo");
+            if (tempo>=5)
+            {
+                System.out.println("o cargo e;"+cargo);
+                novoSalario = salario + (salario*10)/100;
+            }
+            if (tempo>=3)
+            {
+              System.out.println("o cargo e;"+cargo);
+              novoSalario = salario + (salario*9)/100;
+            }
+            if (tempo<3)
+            {
+              novoSalario = salario + (salario*8)/100;
+              System.out.println("o cargo e;"+cargo);
+            }
+            if (tempo>=5)
+            {
+                System.out.println("o cargo e;"+cargo);
+                novoSalario = salario + (salario*11)/100;
+            }
+            if (tempo>=3)
+            {
+              System.out.println("o cargo e;"+cargo);
+              novoSalario = salario + (salario*10)/100;
+            }
+            if (tempo<3)
+            {
+              novoSalario = salario + (salario*9)/100;
+              System.out.println("o cargo e;"+cargo);
+            }
+ 
+           if (tempo>=5)
+            {
+                System.out.println("o cargo e;"+cargo);
+                novoSalario = salario + (salario*12)/100;
+            }
+            if (tempo>=3)
+            {
+              System.out.println("o cargo e;"+cargo);
+              novoSalario = salario + (salario*11)/100;
+            }
+            if (tempo<3)
+            {
+              novoSalario = salario + (salario*10)/100;
+              System.out.println("o cargo e;"+cargo);
+            }else
+                System.out.println("O cargo é outro;"+cargo);
+                novoSalario = salario + ((salario * 7) / 100);
+diferencaSalario = novoSalario - salario;
+System.out.println("O salário antigo é de " + salario);
+System.out.println("O novo salário é de " + novoSalario);
+System.out.println("A diferença do salário é " + diferencaSalario + " Reais");
+    }
+}
+

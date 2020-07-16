@@ -1,0 +1,42 @@
+public class Atividade2
+{
+  public static void main (String[] args)
+  {
+    int[][] vetor=new int[6][4];
+    
+    for(int a=0; a<6; a++)
+    {
+      for(int b=0; b<4; b++)
+      {
+     vetor[a][b]=Entrada.leiaInt("Linha: "+a+". Coluna: "+b+". Digite um número: ");
+    }
+    }
+    
+    for(int a=0; a<6; a++)
+    {
+      for(int b=0; b<4; b++)
+    {
+     if (vetor[a][b]>30)
+     {
+    System.out.println("Maior que 30: "+vetor[a][b]);
+     }
+     if (vetor[a][b]==30)
+     {
+       vetor[a][b]=0;
+     }
+     if (vetor[a][b]==30)
+     {
+       vetor[b][b]=0;
+     }
+       
+     if (vetor[a][b]!=30)
+     {
+     System.out.println("Linha: "+a+". Coluna: "+b+". Numero: "+ vetor[a][b]);
+     }
+    System.out.println(a+b+"numeros sao maiores que 30.");
+      }
+    }
+  }
+}
+
+

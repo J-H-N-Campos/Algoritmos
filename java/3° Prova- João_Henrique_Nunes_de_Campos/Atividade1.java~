@@ -1,0 +1,19 @@
+public class Atividade1
+{
+  public static void main (String[] args)
+  {
+    int vetor[]=new int[10];
+    
+    for (i=0; i<10; i++)
+    {
+      vetor[i]=Entrada.leiaInt("Digite algum número");
+      
+      if (vetor[i]%2==0)
+      {
+        vetor[i]*5
+      }else
+        vetor[i]+5
+    }
+  }
+}
+      

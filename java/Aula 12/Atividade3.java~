@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Atividade3
+{
+ public static void main(String args[]) 
+ {
+  int matriz[][] = new int[10][10];
+  int vetor[] = new int[10];
+  Scanner entrada = new Scanner(System.in);
+  for (int i = 0; i < matriz.length; i++) 
+  {
+   System.out.print("Digite 10 numeros;"+i);
+   for (int x = 0; x < matriz[i].length; x++) 
+   {
+    matriz[i][x] = entrada.nextInt();
+   }
+  }
+   
+   for (int x1 = 0; x1 < 10; x1++) 
+   {
+    vetor[x1] = matriz[1][x1];
+    matriz[1][x1] = matriz[7][x1];
+    matriz[7][x1] = vetor[x1];
+
+    vetor[x1] = matriz[x1][3]; 
+    matriz[x1][3] = matriz[x1][9];
+    matriz[9][x1] = vetor[x1];
+
+   }
+  
+  for (int x2 = 0; x2 < 10; x2++) 
+  {
+   vetor[x2] = matriz[4][x2];
+   matriz[4][x2] = matriz[x2][9];
+   matriz[x2][9] = vetor[x2];
+  }
+
+  for (int i = 0; i < matriz.length; i++) 
+  {
+   System.out.println(" ");
+   for (int x = 0; x < matriz[i].length; x++) 
+   {
+    System.out.print(matriz[i][x] + " ");
+
+   }
+  }
+ }
+}

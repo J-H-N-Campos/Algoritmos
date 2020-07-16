@@ -1,0 +1,40 @@
+/*João é dono de uma pequena padaria e deseja calcular o preço de custo dos
+pãezinhos que produz. Para fazer um lote (uma fornada) ele usa sempre uma hora do
+serviço do padeiro e uma hora de forno. O que varia o preço de custo é a quantidade
+de pães que produz por lote. Para cada unidade são consumidos 50g de farinha pronta
+(um preparado especial) e água. O custo da água é desprezível. Faça um programa
+para ajudar o João a calcular o custo de um pão. O programa deve solicitar o valor da
+hora do padeiro, o valor de uma hora de forno, o valor de 1 kg de farinha e quantos
+pães ele deseja fazer naquele lote (considere um lote razoável e viável, mas é
+desprezível o tamanho máximo do lote). */
+public class Atividade_prova_simulado1
+{
+  public static void main (String[] args)
+  {
+    double hpadeiro=0;
+    double vforno=0;
+    double vfarinha=0;
+    double qpaes=0;
+    double custo=0;
+    double custoFinal=0;
+      hpadeiro=Entrada.leiaDouble("digite o valor da hora de 1 hora do padeiro");
+      vforno=Entrada.leiaDouble("digite o valor da hora de 1 hora de forno");
+      vfarinha=Entrada.leiaDouble("digite o valor de farinha");
+      qpaes=Entrada.leiaDouble("digite a quantidade de paes");
+      
+      custo=(hpadeiro+vforno+vfarinha*qpaes);
+      custoFinal=(custo/50);
+      
+      
+    System.out.println("o custo de td e;"+custoFinal);
+  }
+}
+
+
+
+
+      
+      
+      
+    
+    

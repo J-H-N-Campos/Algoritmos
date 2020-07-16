@@ -1,0 +1,31 @@
+public class Atividade6
+{
+  public static void main (String [] args)
+  {
+    int[] vetor=new int[4];
+    float[] vetora=new float[4];
+    String[] vetorb=new String [4];
+    
+    
+    for(int i=0; i<4; i++)
+    {
+      vetor[i]=Entrada.leiaInt("Digite o valor do total de vendas dos vendedores");
+      vetora[i]=Entrada.leiaFloat("Digite o percentual do valor dos vendedores");
+      vetorb[i]=Entrada.leiaString("digite os nomes dos vendedores");
+      
+      
+      vetorb[i]=(vetor[i]*vetora[i]/100);
+    }
+  }
+}
+       
+      
+      
+      
+      
+   
+        
+      
+      
+      
+      

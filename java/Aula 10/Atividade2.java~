@@ -1,0 +1,43 @@
+public Class Atividade2
+{
+  public static void main (String[] args)
+  {
+    int[] vetor=new int[7];
+    int x[i]=0;
+    int x1[i]=0;
+    int x2[i]=0;
+    
+    
+    for(int i=0; i<7; i++)
+    {
+      vetor[i]=Entrada.leiaInt("Digite setes numeros");
+    }
+    for(int i=0; i<7; i++)
+    {
+      if (vetor[i]%2==0)
+      {
+        x[i]=vetor[i]
+      }
+      for(int i=0; i<7; i++)
+      {
+       if (vetor[i]%3==0)
+      {
+        x1[i]=vetor[i]
+      }
+      for(int i=0; i<7; i++)
+      {
+       if (vetor[i]%2==0) && (vetor[i]%3==0)
+      {
+         x2[i]=vetor[i]
+       }
+       System.out.println("os numeros multiplos de dois sao:"+x[i]);
+       System.out.println("os numeros multiplos de tres sao:"+x1[i]);
+       System.out.println("os numeros multiplos de dois e tres sao:"+x2[i]);
+      }
+      }
+    }
+  }
+}
+       
+       
+       

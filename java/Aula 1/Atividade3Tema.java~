@@ -1,0 +1,14 @@
+/*Ler dois valores inteiros (variáveis A e B) e efetuar as operações de
+adição, subtração e multiplicação de A por B, apresentando ao final
+os três resultados obtidos.*/
+public class Atividade3Tema
+{
+  public static void main (String[] args)
+  {
+    int va= Escreva.Int.leia("valor a");
+    int vb= Escreva.Int.leia("valor b");
+    int= (va+vb);
+    int= (va-vb);
+    int= (va*vb);
+    Systema.out.print("o valor da soma,multiplicação,subtração é")+" "+va+vb;
+    

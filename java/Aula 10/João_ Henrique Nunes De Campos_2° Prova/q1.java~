@@ -1,0 +1,26 @@
+public class q1
+{
+  public static void main (String[] args)
+  {
+    int[] vetor=new int[4];
+    
+    
+    for(int i=0; i<4; i++)
+    {
+      System.out.println("Digite 20 numeros maiores que zeros e positivos, caso contrario o programa ira falhar");
+      if (vetor[i]>0 && vetor[i]<-1)
+      {
+        vetor[i]=Entrada.leiaInt("Digite 20 numeros:");
+        System.out.print("os numeros digitados foram:"+"  "+vetor[i]+"  "+vetor[i]+"  "+vetor[i]+"  "+vetor[i]);
+      }else
+      System.out.println("ERRO!!!!!, avisei >.>:");
+      
+      for(int i=0; i<4; i++)
+      {
+       System.out.print("rotacao dos numeros digitados :"+"- #"+vetor[i]+"- #"+vetor[i]+"- #"+vetor[i]+"- #"+vetor[i]);
+      }
+    }
+  }
+}
+      
+    

@@ -1,0 +1,12 @@
+/*Faça um algoritmo que calcule a média aritmética de um aluno,
+que possui 3 notas.*/
+public class Atividade1Tema
+{
+  public static void main (String[] args)
+  {
+    int nota1=Entrada.leiaIntnl("digite a nota 1");
+      int nota2=Entrada.leiaIntnl("digite a nota 2");
+      int nota3=Entrada.leiaIntnl ("digite a nota 3");
+      int media=(valor1+valor2+valor3)/3;
+      System.out.printnl("a media será"+media);
+                            

@@ -1,0 +1,28 @@
+public class Exercicio3
+{
+  public static void main (String[] args);
+  {
+    int num=0;
+    int cont=0;
+    int cont1=0;
+    int cont2=0;
+    while (cont<5)
+    {
+      num=Entrada.leiaInt("digite um numero");
+      if (num==0-25.9 && num==26-5.9)
+      {
+        cont1++;
+        if (num==5.1-75.9 && num==76-100)
+        {
+          cont2++;
+        }
+        {cont++;
+        }
+         System.out.println("Resultado final;"+cont1);
+         System.out.println("resultado final;"+cont2);
+      }
+    }
+  }
+}
+            
+          

@@ -1,0 +1,23 @@
+public class Atividade2
+{
+  public static void main (String args)
+  {
+    Char matriz1[][]=new matriz1[2][5];
+    Char matriz2[][]=new matriz2[2][5];
+    Char matriz3[][]=new matriz3[2][5];
+    
+    for(int i=0; i<2; i++)
+    {
+      for(int a=0; a<5; a++)
+      {
+        matriz1[i][a]=Entrada.leiaChar("Digite alguma letra");
+        matriz2[i][a]=Entrada.leiaChar("Digite alguma letra");
+        
+        matriz3=(matriz1 && matriz2);
+        System.out.println("-----Matriz------"+" "+matriz3);
+      }
+    }
+  }
+}
+        
+        

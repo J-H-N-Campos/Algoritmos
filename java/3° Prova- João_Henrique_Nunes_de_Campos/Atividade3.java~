@@ -1,0 +1,33 @@
+public class Atividade3
+{
+  public static void main (string [] args)
+  {
+    double nota1=0;
+    double nota2=0;
+    double nota3=0;
+    String nome;
+    double media=0;
+    
+    System.out.println("Lembrando que a primeira nota possui peso 3, a segunda peso 4 e a terceira peso3");
+    for(int i=0; i<10; i++)
+    {
+      System.out.println("----------------------------------------");
+      nome=Entrada.leiaString("Digite o nome do aluno");
+      nota1=Entrada.leiaDouble("Digite a primeira nota do aluno");
+      if (nota1>3)
+      {
+        System.out.println("Erro, limite de peso por prova");
+      }
+      nota2=Entrada.leiaDouble("Digite a segunda nota do aluno");
+      if (nota2>4)
+      {
+        System.out.println("Erro, limite de peso por prova");
+      }
+      if (nota3>3)
+      {
+        System.out.println("Erro, lmite de peso por prova"):
+      }
+      nota3=Entrada.leiaDouble("Digite a terceira nota do aluno");
+      
+      
+    

@@ -1,0 +1,32 @@
+/*Fazer um programa que recebe uma matriz de números inteiros 10x3 contendo código, quantidade e preço de 10 produtos e depois mostre:
+a) o valor total do estoque desta loja;
+b) o código do produto mais barato e o código do produto mais caro;
+c) o total de itens disponíveis nas prateleiras desta loja;
+d) os códigos de todos os produtos que tem preço abaixo do preço médio;
+e) uma lista de preços com todos os códigos, quantidades e preços, porém os produtos com códigos ímpares terão aumento de 10% e os com código par aumento de 5%
+f) uma lista de preços com todos os códigos, quantidades, preço e preço da parcela, sabendo-se que o preço da parcela é um terço do valor da mercadoria com juros de 8%.*/
+
+public class Atividade2
+{
+  public static void main (String[] args)
+  {
+    int[][] estoque= new int [10][3];
+    int media=0;
+    int mediaf=0;
+    for(int i=0; i<10; i++)
+    {
+      estoque[i][0]=Entrada.leiaInt("digite o codigo");
+      estoque[i][1]=Entrada.leiaInt("digite o quantidade");
+      estoque[i][2]=Entrada.leiaInt("digite o preco");
+    }
+    for(int i=0; i<10; i++)
+    {
+
+    media=media+estoque[i][2];
+    }
+      mediaf=media/10;
+    System.out.println("preco medio dos produtos da loja:"+mediaf);
+  }
+}
+
+    

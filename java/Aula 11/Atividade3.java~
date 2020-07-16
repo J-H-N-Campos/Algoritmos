@@ -1,0 +1,11 @@
+/* Faça um programa que preencha uma matriz M (5x6), calcule e mostre a matriz R, resultante da multiplicação dos elementos de M pelo seu maior elemento. */
+public class Atividade3
+{
+  public static void main (String[] args)
+  {
+    int m[][]=new int[]{1,2,3,4,5}[]{10,11,12,13,14,15};
+    int r[][]=new int[][];
+  }
+}
+    
+    

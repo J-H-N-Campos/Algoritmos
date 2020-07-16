@@ -1,0 +1,49 @@
+public class Atividade2
+{
+  public static void main(String[] args)
+  {
+    String[] vetor=new String[5];
+    double[] vetora=new double[10];
+    int[] vetorb=new int[12];
+    
+    for(int i=0; i<5; i++)
+    {
+      vetor[i]=Entrada.leiaString("Digite as letras vogais, voce tem 5 tentatiavs");
+      if (vetor[i]!="a" && vetor[i]!="e")
+      {
+        System.out.println("nao e uma letra vogal");
+      }else
+        System.out.println("a letra vogal que voce digitou e:"+vetor[i]);
+      if (vetor[i]!="i" && vetor[i]!="o")
+      {
+        System.out.println("nao e uma letra vogal");
+    }else
+      System.out.println("a letra vogal que voce digitou e:"+vetor[i]);
+      if (vetor[i]!="u")
+      {
+        System.out.println("nao e uma letra vogal");
+      }else
+        System.out.println("a letra vogal que voce digitou e:"+vetor[i]);
+    }
+     for(int i=0; i<10; i++)
+     {
+       vetora[i]=Entrada.leiaDouble("digite a altura do grupo de pessoas:");
+       System.out.println("a altura das pessoas e:"+vetora[i]);
+     }
+     for(int i=0; i<12; i++)
+     {
+       System.out.println("os meses sao janeiro,fevereiro,marco,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro:");
+       vetorb[i]=Entrada.leiaInt("digite os meses do ano:");
+     }
+  }
+}
+       
+     
+       
+        
+        
+      
+      
+      
+      
+    
